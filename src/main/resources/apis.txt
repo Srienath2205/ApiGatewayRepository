@@ -1,0 +1,17 @@
+Microservice 1 (Inventory Service) API Endpoints
+API Operation	HTTP Method	API Gateway Path	Microservice URL
+Get All Products	GET	/api/v1/products	http://localhost:8090/products
+Get Single Product	GET	/api/v1/products/{id}	http://localhost:8090/products/{id}
+Add Product	POST	/api/v1/products	http://localhost:8090/products
+Update Product	PUT	/api/v1/products/{id}	http://localhost:8090/products/{id}
+Delete Product	DELETE	/api/v1/products/{id}	http://localhost:8090/products/{id}
+
+Microservice 2 (User Service) API Endpoints
+API Operation	HTTP Method	API Gateway Path	Microservice URL
+Add New User	POST	/api/v1/users	http://localhost:8091/users
+Update User	PUT	/api/v1/users	http://localhost:8091/users
+Update User Password	PUT	/api/v1/users/{id}/password	http://localhost:8091/users/{id}/password
+User Login	GET	/api/v1/users/login	http://localhost:8091/users/{email}/{password}
+Fetch Single User	GET	/api/v1/users/{userId}	http://localhost:8091/users/{userId}
+Get All Users	GET	/api/v1/users/all	http://localhost:8091/users/all
+Get OTP	GET	/api/v1/users/otp/{to}	http://localhost:8091/users/getOtp/{to}
